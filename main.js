@@ -20,7 +20,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
-    const phoneNumber = '5511979521165'; // Substitua pelo número de telefone da loja, no formato internacional (e.g., 5511999999999 para um número brasileiro).
+    const phoneNumber = '5511983922181'; // Substitua pelo número de telefone da loja, no formato internacional (e.g., 5511999999999 para um número brasileiro).
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=Nome: ${encodeURIComponent(name)}%0ADúvida: ${encodeURIComponent(message)}`;
 
