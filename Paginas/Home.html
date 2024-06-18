@@ -8,11 +8,18 @@
 </head>
 <body>
     <header>
-        <a href="#">Home</a>
-        <a href="SobreNos.html">Sobre Nós</a>
-        <a href="Home.html" class="logo"></a>
-        <a href="Contatos.html">Contato</a>
-        <a href="#">Produtos</a>
+        <a href="#" class="logo"></a>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="SobreNos.html">Sobre Nós</a>
+            <a href="Contatos.html">Contato</a>
+            <a href="#">Produtos</a>
+        </nav>
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <section class="hero">
@@ -86,30 +93,3 @@
     <footer>
         <p>&copy; 2023 Confeiteira Gourmet. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.card');
-
-            cards.forEach(card => {
-                card.addEventListener('click', () => {
-                    cards.forEach(c => c.classList.remove('clicked'));
-                    card.classList.add('clicked');
-                });
-            });
-        });
-
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const message = document.getElementById('message').value;
-        const phoneNumber = '5511979521165'; // Substitua pelo número de telefone da loja, no formato internacional (e.g., 5511999999999 para um número brasileiro).
-
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=Nome: ${encodeURIComponent(name)}%0ADúvida: ${encodeURIComponent(message)}`;
-        
-        window.open(whatsappUrl, '_blank');
-    });
-    </script>
-</body>
-</html>
